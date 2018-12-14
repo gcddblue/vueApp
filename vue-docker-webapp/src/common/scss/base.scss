@@ -1,0 +1,53 @@
+@import "variable.scss";
+
+*, html, body, button, input, textarea, select {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a{
+	color:$col-text;
+	text-decoration: none;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+  address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+  h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+  body, html {
+  height: 100%;
+  font: 12px/1.5 Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;;
+  padding: 0;
+  margin: 0;
+  color: $col-text;
+  background: #f1f2f6;
+  }
+  .clearFixed:after{
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .isHidden{
+    overflow: hidden;
+  }

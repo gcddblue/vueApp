@@ -1,0 +1,41 @@
+// 颜色定义规范
+$col-text:#39464E;
+$col-text-ligblue:#409EFF;
+$col-bg:#409EFF;
+$col-bg-box1:#fafafa;
+$col-text-lab:#606266;
+// 字体定义规范
+$font-size-small:12px;
+$font-size-medium:14px;
+$font-size-large:18px;
+// 宽度定义
+$content-width:1140px;
+%white-box{
+  padding: 30px 0 30px 0;
+  background-color: #fff;
+  box-shadow: 0 1px 6px -1px rgba(0, 0, 0, 0.15);
+  margin:0px auto 0 auto;
+  width: 1140px;
+  box-sizing: border-box;
+  position: relative;
+}
+%box-title{
+  font-size: $font-size-large;
+  margin-left: 40px;
+  i{
+    margin-right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    &:hover{
+      color: $col-text-ligblue;
+    }
+  }
+}
+%li-style{
+  float: left;
+  position: relative;
+}
+%text-style{
+  font-size: 14px;
+  color:$col-text;
+}
